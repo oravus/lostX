@@ -69,7 +69,7 @@ This is the source code for the paper titled - "LoST? Appearance-Invariant Place
 
 
 
-#### Citation
+## Citation
 
 - If you find this work useful, please cite it as:  
   Sourav Garg, Niko Sunderhauf, and Michael Milford. LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics. Proceedings of Robotics: Science and Systems XIV, 2018.  
@@ -86,7 +86,7 @@ This is the source code for the paper titled - "LoST? Appearance-Invariant Place
 
 
 
-#### License
+## License
 The code is released under MIT License.
 
 
