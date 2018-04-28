@@ -23,19 +23,19 @@ This is the source code for the paper titled - "LoST? Appearance-Invariant Place
 
 #### Download
 
-- In your workspace, clone the repositories:
-  ```
-  git clone https://github.com/oravus/lostX.git
-  cd lostX
-  git clone https://github.com/oravus/refinenet.git
-  ```
-  NOTE: If you download this repository as a zip, the refineNet's fork will not get downloaded automatically, being a git submodule.
-- Download the Resnet-101 model pre-trained on Cityscapes dataset from [here](https://drive.google.com/drive/folders/1U2c1N6QJdzB_8HBgXb7mJ6Qk66JDBHI9) or [here](https://pan.baidu.com/s/1nxf2muP#list/path=%2Frefinenet_public_new%2Frefinenet_released%2Frefinenet_res101&parentPath=%2Frefinenet_public_new%2Frefinenet_released). More details on RefineNet's [Github page](https://github.com/guosheng/refinenet).
-  - Place the downloaded model's `.mat` file in the `refinenet/model_trained/` directory.
-- If you are using docker, download the docker image:
-  ```
-  docker pull souravgarg/vpr-lost-kc:v1
-  ```
+1. In your workspace, clone the repositories:
+   ```
+   git clone https://github.com/oravus/lostX.git
+   cd lostX
+   git clone https://github.com/oravus/refinenet.git
+   ```
+   NOTE: If you download this repository as a zip, the refineNet's fork will not get downloaded automatically, being a git submodule.
+2. Download the Resnet-101 model pre-trained on Cityscapes dataset from [here](https://drive.google.com/drive/folders/1U2c1N6QJdzB_8HBgXb7mJ6Qk66JDBHI9) or [here](https://pan.baidu.com/s/1nxf2muP#list/path=%2Frefinenet_public_new%2Frefinenet_released%2Frefinenet_res101&parentPath=%2Frefinenet_public_new%2Frefinenet_released). More details on RefineNet's [Github page](https://github.com/guosheng/refinenet).
+   - Place the downloaded model's `.mat` file in the `refinenet/model_trained/` directory.
+3. If you are using docker, download the docker image:
+   ```
+   docker pull souravgarg/vpr-lost-kc:v1
+   ```
 
 
 #### Run
@@ -71,9 +71,9 @@ This is the source code for the paper titled - "LoST? Appearance-Invariant Place
 
 #### Citation
 
-- If you find this work useful, please cite it as:
-  Sourav Garg, Niko Sunderhauf, and Michael Milford. LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics. Proceedings of Robotics: Science and Systems XIV, 2018.
-  bibtex:
+- If you find this work useful, please cite it as:  
+  Sourav Garg, Niko Sunderhauf, and Michael Milford. LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics. Proceedings of Robotics: Science and Systems XIV, 2018.  
+  bibtex:  
   ```
   @article{garg2018lost,
   title={LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics},
