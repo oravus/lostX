@@ -10,7 +10,7 @@ This is the source code for the paper titled - "LoST? Appearance-Invariant Place
 - [RefineNet](https://arxiv.org/abs/1611.06612)
   - Required primarily for visual semantic information. Convolutional feature maps based dense descriptors are also extracted from the same.
   - A [modified fork](https://github.com/oravus/refinenet) of RefineNet's [code](https://github.com/guosheng/refinenet) is used in this work to simultaneously store convolutional dense descriptors.
-  - Matlab      (Tested on *2017a*)
+  - Requires Matlab      (Tested on *2017a*)
 - Python        (Tested on *2.7*)
   - numpy       (Tested on *1.11.1*, *1.14.2*)
   - scipy       (Tested on *0.13.3*, *0.17.1*)
@@ -42,21 +42,23 @@ This is the source code for the paper titled - "LoST? Appearance-Invariant Place
 1. Generate and store semantic labels and dense convolutional descriptors from RefineNet's *conv5* layer
    In the MATLAB workspace, from the `refinenet/main/` directory, run:
    ```
-   vl_compilenn
    demo_predict_mscale_cityscapes
    ```
-   The above will use the sample dataset from `refinenet/datasets/` directory. You can set path to your data in `demo_predict_mscale_cityscapes.m` through variable `datasetName` and `img_data_dir`.
+   The above will use the sample dataset from `refinenet/datasets/` directory. You can set path to your data in `demo_predict_mscale_cityscapes.m` through variable `datasetName` and `img_data_dir`.  
+You might have to run `vl_compilenn` before running the demo, please refer to the instructions for running refinenet in their official [Readme.md](https://github.com/guosheng/refinenet)
 
-2. \[Optional Docker\] If you have an environment with python and other dependencies installed, skip this step, otherwise run a docker container:
+2. \[For Docker users\]  
+If you have an environment with python and other dependencies installed, skip this step, otherwise run a docker container:
    ```
    docker run -it -v PATH_TO_YOUR_HOME_DIRECTORY/:/workspace/ souravgarg/vpr-lost-kc:v1 /bin/bash
    ```
-   From within the docker container, navigate to `lostX/lost_kc/` repository.
-3. Reformat and pre-process RefineNet's output from `lostX/lost_kc/` directory:
+   From within the docker container, navigate to `lostX/lost_kc/` repository.  
+`-v` option mounts the *PATH_TO_YOUR_HOME_DIRECTORY* to */workspace* directory within the docker container.
+3. Reformat and pre-process RefineNet's output from `lostX/lost_kc/` directory: 
    ```
    python reformat_data.py -p $PATH_TO_REFINENET_OUTPUT
    ```
-   $PATH_TO_REFINENET_OUTPUT that comprises the *denseDesc* subdirectory, for example, *../refinenet/cache_data/test_examples_cityscapes/1-s_result_20180427152622_predict_custom_data/predict_result_1/*
+   $PATH_TO_REFINENET_OUTPUT is set to be the parent directory of `predict_result_full`, for example, *../refinenet/cache_data/test_examples_cityscapes/1-s_result_20180427152622_predict_custom_data/predict_result_1/*
 4. Compute LoST descriptor:
    ```
    python LoST.py -p $PATH_TO_REFINENET_OUTPUT 
@@ -66,7 +68,7 @@ This is the source code for the paper titled - "LoST? Appearance-Invariant Place
    ```
    python match_lost_kc.py -n 10 -f 0 -p1 $PATH_TO_REFINENET_OUTPUT_1  -p2 $PATH_TO_REFINENET_OUTPUT_2
    ```
-
+Note: Run `python FILENAME -h` for any of the python source files in Step 3, 4, and 6 for description of arguments passed to those files. 
 
 
 ## Citation
