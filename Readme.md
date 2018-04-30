@@ -2,6 +2,19 @@
 
 This is the source code for the paper titled - "LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics", pre-print available [here](https://arxiv.org/abs/1804.05526).
 
+If you find this work useful, please cite it as:  
+Sourav Garg, Niko Sunderhauf, and Michael Milford. LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics. Proceedings of Robotics: Science and Systems XIV, 2018.  
+bibtex:
+```
+@article{garg2018lost,
+title={LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics},
+author={Garg, Sourav and Suenderhauf, Niko and Milford, Michael},
+journal={Proceedings of Robotics: Science and Systems XIV},
+year={2018}
+}
+```
+RefineNet's citation as mentioned on their [Github page](https://github.com/guosheng/refinenet).
+
 
 ## Setup and Run
 
@@ -69,23 +82,6 @@ If you have an environment with python and other dependencies installed, skip th
    python match_lost_kc.py -n 10 -f 0 -p1 $PATH_TO_REFINENET_OUTPUT_1  -p2 $PATH_TO_REFINENET_OUTPUT_2
    ```
 Note: Run `python FILENAME -h` for any of the python source files in Step 3, 4, and 6 for description of arguments passed to those files. 
-
-
-## Citation
-
-- If you find this work useful, please cite it as:  
-  Sourav Garg, Niko Sunderhauf, and Michael Milford. LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics. Proceedings of Robotics: Science and Systems XIV, 2018.  
-  bibtex:  
-  ```
-  @article{garg2018lost,
-  title={LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics},
-  author={Garg, Sourav and Suenderhauf, Niko and Milford, Michael},
-  journal={Proceedings of Robotics: Science and Systems XIV},
-  year={2018}
-  }
-  ```
-- RefineNet's citation as mentioned on their [Github page](https://github.com/guosheng/refinenet).
-
 
 
 ## License
