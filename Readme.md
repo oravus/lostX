@@ -2,6 +2,15 @@
 
 This is the source code for the paper titled - "LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics", pre-print available [here](https://arxiv.org/abs/1804.05526).
 
+An example output image showing Keypoint Correspondences:
+
+![An example output image showing Keypoint Correspondences](lost_kc/bin/day-night-keypoint-correspondence-place-recognition.jpg "Keypoint Correspondences using LoST-X")
+
+
+Flowchart of the proposed approach:
+
+![Flowchart of the proposed approach](lost_kc/bin/LoST-Flowchart-Visual_Place_Recognition.jpg "Flowchart for the proposed approach - LoST-X")
+
 If you find this work useful, please cite it as:  
 Sourav Garg, Niko Sunderhauf, and Michael Milford. LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics. Proceedings of Robotics: Science and Systems XIV, 2018.  
 bibtex:
