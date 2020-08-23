@@ -96,7 +96,12 @@ Note: Run `python FILENAME -h` for any of the python source files in Step 3, 4, 
 ## License
 The code is released under MIT License.
 
+## Related Projects
+[Delta Descriptors (2020)](https://github.com/oravus/DeltaDescriptors)
 
+[CoarseHash (2020)](https://github.com/oravus/CoarseHash)
+
+[seq2single (2019)](https://github.com/oravus/seq2single)
 
 
 
