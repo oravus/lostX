@@ -1,6 +1,6 @@
 # LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics
 
-This is the source code for the paper titled - "LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics", pre-print available [here](https://arxiv.org/abs/1804.05526).
+This is the source code for the paper titled - "LoST? Appearance-Invariant Place Recognition for Opposite Viewpoints using Visual Semantics", [[arXiv](https://arxiv.org/abs/1804.05526)][[RSS 2018 Proceedings](http://www.roboticsproceedings.org/rss14/p22.pdf)]
 
 An example output image showing Keypoint Correspondences:
 
